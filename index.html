@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="repository" content="cocojio/navi">
+    <meta name="updated_at" content="2020-07-09T10:46:56+08:00">
+    <meta name="established_at" content="2019-06-11T00:00+08:00">
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>导航站</title>
+<meta name="generator" content="Jekyll v3.8.7" />
+<meta property="og:title" content="导航站" />
+<meta name="author" content="ZENS" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="description" content="ZENS" />
+<meta property="og:description" content="ZENS" />
+<link rel="canonical" href="http://0.0.0.0:4000/" />
+<meta property="og:url" content="http://0.0.0.0:4000/" />
+<meta property="og:site_name" content="ZENS" />
+<script type="application/ld+json">
+{"description":"ZENS","headline":"导航站","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":""},"name":"ZENS"},"@type":"WebSite","url":"http://0.0.0.0:4000/","name":"ZENS-导航站","author":{"@type":"Person","name":"ZENS"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" type="text/css" href="//unpkg.com/fomantic-ui/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/home.css">
+     <link rel="stylesheet" type="text/css" href="/assets/wangzhanlogo/iconfont.css">
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="/assets/css/masthead.css">
+    
+    <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/images/logo-dark.png">
+    <!-- 备份上述一条    <link rel="icon" type="image/x-icon" href="/favicon.ico">  -->
+    <!--  -->
+</head>
+<body>
+ 
+  
+  <!--    <div class="ui large top fixed borderless hidden menu">
+    <div class="ui container">
+        <a class="header item" href="/">
+            <div class="ui middle aligned image">
+                <img class="logo-image" src="http://www.zengjiang.net/images/logo-dark.svg" alt="Logo">
+            </div>
+            <div class="logo-text" style="font-family: fantasy;">ZENS-导航站</div>
+        </a>
+        
+        <div class="right menu">
+            <a class="item" style="margin-right: 10px;" href="http://www.zengjiang.net" target="_blank"><i class="home icon"></i>主页</a>
+            
+            <a class="item" href="https://www.zens.ml" target="_blank"><i class=""></i>ZENS</a>
+         <a class="item" href="http://www.zengjiang.net:8080" target="_blank"><i class="iconfont iconyinyue"></i>音乐站</a>
+            <a class="item" href="https://https://wp.zens.workers.dev/0:/" target="_blank"><i class="iconfont icontmplink"></i>Z-Drive</a>
+        </div>
+        
+    </div>
+</div>    -->
+  
+  
+    <div class="ui vertical inverted sidebar menu">
+    <a class="header item" href="/">
+        <div class="ui middle aligned image">
+          <!--  <img class="logo-image" src="http://dh.jiang.pub/images/logo-white.svg" alt="Logo">  -->
+        </div>
+     <!-- 手机端侧边左上角折页  -->   <div class="logo-text">ZENS-导航站</div>
+    </a>
+    
+    <a class="item" href="http://home.zengjiang.net/" target="_blank"><i class="iconfont iconshuimushequ"></i>Home-device</a>
+    <a class="item" href="http://www.zengjiang.net:8080" target="_blank"><i class="iconfont iconyinyue"></i>.Music</a>
+    <a class="item" href="http://ly.jiang.ml" target="_blank"><i class="iconfont iconlanzouyun"></i>OpenWrt</a>
+</div>
+    <div class="pusher">
+		<div class="ui inverted vertical masthead center aligned segment zoomed">
+     <div class="ui container">
+        <div class="ui large borderless inverted menu" style="border: none;">
+            <div class="toc link icon item"><i class="sidebar icon"></i></div>
+            <a class="header item" href="/">
+          <!--      <div class="ui middle aligned image">
+                    <img class="logo-image" src="https://navi.idealdestructor.com/images/logo-white.svg" alt="Logo">
+                </div>
+                <div class="logo-text"></div>  -->
+            </a>
+            
+            <div class="right menu">
+				<a class="item" style="margin-right: 10px;" href="http://home.zengjiang.net" target="_blank"><i class="home icon"></i>Home-Device</a>
+				<a class="item" href="http://www.zengjiang.net:8080" target="_blank"><i class="iconfont iconyinyue"></i>Music</a>
+         <!--       <a class="item" href="https://github.com/idealdestructor/navi" target="_blank"><i class="github icon"></i>GitHub</a>  -->
+            </div>
+        </div>
+    </div> 
+    
+      <div class="ui text container" style="height:65%;margin-top:15%;margin-bottom: 20%;"><a id="hitokoto" class="ui black pointing below label"><i class="quote left icon"></i></a>
+      
+    <!--  <h1 class="ui inverted logo header">
+		<img class="ui centered image" src="http://dh.jiang.pub/images/logo-white.svg" alt="Logo">       搜索框上的LOGO   
+	</h1>   --> 
+	<a class="ui inverted header" href="https://www.zens.ml" target="_blank"><h1 class="ui inverted header" style="font-family: fantasy;margin-bottom: 5px;" > </h1></a>
+	
+	
+	
+	<div class="ui inverted fluid left icon right action input" id="search-div">
+		
+		<input id="search-query" type="text" placeholder="立即搜索" autofocus="autofocus">
+		<select id="search-services" class="ui compact selection dropdown">
+			<option id="baidu" value="baidu" data-url="https://baidu.com/s?ie=utf-8&wd="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">百度</option>
+			 <option id="google" value="google" data-url="https://google.com/search?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">谷歌</option>
+			 <option id="Z-DRive" value="Z-DRive" data-url="https://wp.zens.workers.dev/0:search?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">Z-DRive</option>
+			
+			<option id="baidumap" value="baidumap" data-url="https://api.map.baidu.com/geocoder?address="
+			 data-suffix="&output=html" data-transcode-from=""
+			 data-transcode-to="">百度地图</option>
+			 
+			 
+			 
+			 
+			 <option id="wikipedia" value="wikipedia" data-url="https://www.wikipedia.org/wiki/"
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">维基百科</option>
+			  <option id="bing" value="bing" data-url="https://cn.bing.com/search?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">必应</option>
+			 <option id="github" value="github" data-url="https://github.com/search?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">GitHub</option>
+			
+			 <option id="zhihu" value="zhihu" data-url="https://www.zhihu.com/search?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">知乎</option>
+			 <option id="douban" value="douban" data-url="https://www.douban.com/search?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">豆瓣</option><option id="weibo" value="weibo" data-url="https://s.weibo.com/weibo/"
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">微博</option>
+			 <option id="weixinmp" value="weixinmp" data-url="http://weixin.sogou.com/weixin?type=1&query="
+			 data-suffix="&ie=utf8" data-transcode-from=""
+			 data-transcode-to="">微信公众号</option>
+			 <option id="weixinarticle" value="weixinarticle" data-url="http://weixin.sogou.com/weixin?type=2&query="
+			 data-suffix="&ie=utf8" data-transcode-from=""
+			 data-transcode-to="">微信文章</option>
+			 <option id="minapp" value="minapp" data-url="https://minapp.com/miniapp/search/?query="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">微信小程序</option>
+			<!-- <option id="baiduxueshu" value="baiduxueshu" data-url="https://xueshu.baidu.com/s?wd="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">百度学术</option><option id="googlescholar" value="googlescholar" data-url="https://scholar.google.com/scholar?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">谷歌学术</option><option id="ieeexplore" value="ieeexplore" data-url="http://ieeexplore.ieee.org/search/searchresult.jsp?queryText="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">IEEEXplore</option>  -->
+			 <option id="etymonline" value="etymonline" data-url="https://www.etymonline.com/index.php?search="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">Etymonline</option>
+			 <option id="mw" value="mw" data-url="https://www.merriam-webster.com/dictionary/"
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">Merriam</option>
+			 <option id="tianyancha" value="tianyancha" data-url="https://www.tianyancha.com/search?key="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">天眼查</option>
+			 <option id="taobao" value="taobao" data-url="https://s.taobao.com/search?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">淘宝</option><option id="jd" value="jd" data-url="http://search.jd.com/Search?keyword="
+			 data-suffix="&enc=utf-8" data-transcode-from=""
+			 data-transcode-to="">京东</option>
+		<!--	 <option id="xiami" value="xiami" data-url="http://www.xiami.com/search?key="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">虾米音乐</option>  -->
+			 <option id="bilibili" value="bilibili" data-url="https://search.bilibili.com/all?keyword="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">哔哩哔哩</option>
+			 
+			 <option id="fixzimuxia" value="fixzimuxia" data-url="http://www.zimuxia.cn/?s="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">FIX字幕侠</option>
+			 <option id="wangpan" value="wangpan" data-url="https://dy.jiang.pub/search?kw="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">影视搜索</option> 
+			 
+			 <option id="painku" value="painku" data-url="https://www.pianku.tv/s/"
+			 data-suffix=".html" data-transcode-from="%"
+			 data-transcode-to="_">片库</option>
+			 <option id="lingfengyun" value="lingfengyun" data-url="https://www.lingfengyun.com/search?wd="
+			 data-suffix="so_token=b91cf6b88266eddfd9a7b1ad0af18936&so_source=1" data-transcode-from=""
+			 data-transcode-to="">凌风云</option>
+			 <option id="ciligou" value="ciligou" data-url="https://ciligou.app/search?word="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">磁力狗</option>
+			<!-- <option id="onejav" value="onejav" data-url="https://onejav.com/search/"
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">OneJav</option>  -->
+			 <option id="hiqq" value="hiqq" data-url="http://www.szhongzi.com/so.php?wd="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">种子搜索</option>
+			 
+			 <option id="mijisou" value="mijisou" data-url="https://mijisou.com/?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">秘迹搜索</option>
+			 <option id="duoji" value="duoji" data-url="https://www.dogedoge.com/results?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">多吉搜索</option>
+		<!--	 <option id="googlecn" value="googlecn" data-url="https://google.wanghualang.com/search?newwindow=1&q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">GoogleCN</option>  -->
+			 <option id="neteasecloudmusic" value="neteasecloudmusic" data-url="https://music.163.com/#/search/m/?s="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">网易云音乐</option>
+			 <option id="lanrenmusic" value="lanrenmusic" data-url="http://www.zhmdy.top/music/?name="
+			 data-suffix="&type=qq" data-transcode-from=""
+			 data-transcode-to="">懒人音乐</option>
+		<!--	 <option id="shodan" value="shodan" data-url="https://www.shodan.io/search?query="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">Shodan</option>
+			 <option id="earthdata" value="earthdata" data-url="https://earthdata.nasa.gov/search?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">EarthData</option>   -->
+			 <option id="searchcode" value="searchcode" data-url="https://searchcode.com/?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">SearchCode</option>     
+			 <option id="codeproject" value="codeproject" data-url="https://www.codeproject.com/search.aspx?q="
+			 data-suffix="&x=7&y=9&sbo=kw" data-transcode-from=""
+			 data-transcode-to="">CodeProject</option>
+		<!--	 <option id="sourceforge" value="sourceforge" data-url="https://sourceforge.net/directory/os:windows/?q="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">SourceForge</option>   -->
+			 <option id="baidufanyi" value="baidufanyi" data-url="https://fanyi.baidu.com/#en/zh/"
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">百度翻译</option>
+		<!--	 <option id="idata" value="idata" data-url="https://search.cn-ki.net/search?keyword="
+			 data-suffix="&db=CFLS" data-transcode-from=""
+			 data-transcode-to="">iData</option>   -->
+			 <option id="googlefanyi" value="googlefanyi" data-url="https://translate.google.cn/#view=home&op=translate&sl=auto&tl=zh-CN&text="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">谷歌翻译</option>
+			 <option id="bigwork" value="bigwork" data-url="http://www.bigbigwork.com/tupian/?w="
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">大作</option>
+			 
+			 <option id="58wangpan" value="58wangpan" data-url="https://www.58wangpan.com/search/kw"
+			 data-suffix="" data-transcode-from=""
+			 data-transcode-to="">58网盘</option>
+			 
+		</select>
+		<div id="search-button" class="ui black icon button"><i class="search icon"></i></div>
+	</div>
+	<div class="ui labels shortcuts">
+		<a class="ui black label"
+		 data-search-service-id="baidu" data-tooltip="百度" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="paw blue inverted fitted icon"></i></a>
+		 <a class="ui black label"
+		 data-search-service-id="google" data-tooltip="谷歌" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="google red inverted fitted icon"></i></a>
+		 <a class="ui black label"
+		 data-search-service-id="bing" data-tooltip="必应" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="microsoft teal inverted fitted icon"></i></a>
+		 <a class="ui black label"
+		 data-search-service-id="baidumap" data-tooltip="百度地图" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="map marked alternate yellow inverted fitted icon"></i></a>
+		 <a class="ui black label"
+		 data-search-service-id="wikipedia" data-tooltip="维基百科" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="wikipedia w fitted icon"></i></a><a class="ui black label"
+		 data-search-service-id="github" data-tooltip="GitHub" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="github fitted icon"></i></a>
+		 <a class="ui black label"                  
+		 data-search-service-id="Z-DRive" data-tooltip="Z-DRive" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="iconfont iconzdriver"></i></a>  <!--stack overflow orange inverted fitted icon -->
+		 <a class="ui black label"
+		 data-search-service-id="zhihu" data-tooltip="知乎" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="zhihu blue inverted fitted icon"></i></a>
+		 <a class="ui black label"
+		 data-search-service-id="douban" data-tooltip="豆瓣" data-variation="mini basic" data-position="top center"   
+		 data-inverted=""><i class="iconfont icondouban1"></i></a>
+		 <a class="ui black label"
+		 data-search-service-id="weibo" data-tooltip="微博" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="weibo red inverted fitted icon"></i></a><a class="ui black label"
+		 data-search-service-id="weixinarticle" data-tooltip="微信文章" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="weixin green inverted fitted icon"></i></a>
+		 <a class="ui black label"
+		 data-search-service-id="taobao" data-tooltip="淘宝" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="shopping cart orange inverted fitted icon"></i></a>
+		 <a class="ui black label"
+		 data-search-service-id="jd" data-tooltip="京东" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="shopping cart red inverted fitted icon"></i></a>
+		 <a class="ui black label"
+		 data-search-service-id="bilibili" data-tooltip="哔哩哔哩" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="tv pink inverted fitted icon"></i></a>
+		 <a class="ui black label"
+		 data-search-service-id="ciligou" data-tooltip="磁力狗" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="magnet red inverted fitted icon"></i></a>
+	
+		 <a class="ui black label"
+		 data-search-service-id="baidufanyi" data-tooltip="百度翻译" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="language fitted icon"></i></a>
+		<!-- <a class="ui black label"
+		 data-search-service-id="googlefanyi" data-tooltip="谷歌翻译" data-variation="mini basic" data-position="top center"
+		 data-inverted=""><i class="language fitted icon"></i></a>  -->
+		 
+		 
+		 
+	</div>
+	
+	<!-- <div class="badges">
+        <a id="github-watch" href="https://github.com/idealdestructor/navi/watchers" target="_blank"><img src="https://img.shields.io/github/watchers/idealdestructor/navi.svg?style=social&label=Watch" alt="GitHub Watchers"></a>
+        <a id="github-star" href="https://github.com/idealdestructor/navi/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/idealdestructor/navi.svg?style=social&label=Star" alt="GitHub Stargazers"></a>
+        <a id="github-fork" href="https://github.com/idealdestructor/navi/network/members" target="_blank"><img src="https://img.shields.io/github/forks/idealdestructor/navi.svg?style=social&label=Fork" alt="GitHub Forks"></a>
+        <a id="version" href="https://github.com/idealdestructor/navi/commits" target="_blank"><img src="https://img.shields.io/badge/%E6%9B%B4%E6%96%B0%E4%BA%8E-loading-orange.svg" alt="Update Time"></a>
+       
+       <a id="today-visitors" href="/analytics/"><img src="https://img.shields.io/badge/%E4%BB%8A%E6%97%A5%E8%AE%BF%E5%AE%A2-loading-orange.svg" alt="Today Visitors"></a>
+        <a id="live-visitors" href="/analytics/"><img src="https://img.shields.io/badge/%E5%BD%93%E5%89%8D%E5%9C%A8%E7%BA%BF-loading-orange.svg" alt="Live Visitors"></a> 
+    </div>   -->
+  <!--备用一条	<div style="position: absolute;text-align: center;bottom: 10%;left: 0;right: 0;">	<a class="item" style="width:180px;font-size: 12px;opacity: 0.2;color:white">&copy ZENS&JIANG</a>
+		<a class="item" style="width:180px;font-size: 12px;opacity: 0.2;color:white" href="http://beian.miit.gov.cn/" target="_blank"> 粤ICP备20002442号-2</a>
+	</div>  -->
+
+	<div style="position: absolute;text-align: center;bottom: 10%;left: 0;right: 0;">	<a class="item" style="width:180px;font-size: 12px;opacity: 0.2;color:white">&copy ZENG.SAN</a>
+		<a class="item" style="width:180px;font-size: 12px;opacity: 0.2;color:white" href="http://beian.miit.gov.cn/" target="_blank"> </a>
+	</div>
+</div>
+</div>
+        <div class="ui vertical stripe links segment">
+        <div class="ui equal width stackable internally celled grid">
+            <div class="center aligned row"><div class="links column">
+                        <div class="ui top attached label">资讯&常用</div>         <!--    <i class="iconfont iconXXX"></i>  加图标 -->
+                        
+                        <div class="ui labels" style="margin-top:0px;padding-top:10px;">
+                            <a class="ui basic label" href="http://www.chinadaily.com.cn/" target="_blank"><i class="iconfont iconzgrb"></i>ChinaDaily</a>
+                          <!--  <a class="ui basic label" href="https://flipboard.com/" target="_blank"><i class="flipboard red icon"></i>FlipBoard</a>  -->
+                            <a class="ui red label" href="http://www.eeo.com.cn/" target="_blank"><i class="iconfont iconjingjiguacha"></i>经济观察网</a>
+                            <a class="ui basic label" href="https://www.thepaper.cn/" target="_blank"><i class="iconfont iconpengpai"></i>澎湃</a>
+                            <a class="ui basic label" href="https://www.lanjinger.com/" target="_blank"><i class="iconfont iconcaijing"></i>蓝鲸财经</a>
+                            <a class="ui basic label" href="https://www.huxiu.com/" target="_blank"><i class="iconfont iconhuxiu"></i>虎嗅网</a>
+                            <a class="ui basic label" href="https://36kr.com/" target="_blank"><i class="iconfont icon36ke"></i>36氪</a>
+                            <a class="ui basic label" href="http://www.caixin.com/" target="_blank"><i class="iconfont iconcaixin"></i>财新</a>
+                            <a class="ui basic label" href="https://www.tmtpost.com/" target="_blank"><i class="iconfont icontaimeiti"></i>钛媒体</a>
+                            <a class="ui basic label" href="https://www.nationalgeographic.com/" target="_blank"><i class="iconfont icondili"></i>国家地理</a>
+                            <a class="ui basic label" href="https://variety.com/" target="_blank"><i class="iconfont iconxinwen1"></i>Variety</a>
+                            <a class="ui blue label" href="https://www.autohome.com.cn/shenzhen/" target="_blank"><i class="iconfont iconqichezhijia"></i>汽车之家</a>
+                            <a class="ui basic label" href="http://sz.bendibao.com/" target="_blank"><i class="iconfont iconbendibao"></i>本地宝</a>
+                            <a class="ui basic label" href="http://www.fz0752.com/" target="_blank">惠民之家</a>
+                            <a class="ui orange label" href="https://107cine.com/" target="_blank"><i class="iconfont iconyingshigongye"></i>影视工业网</a>
+                            <a class="ui basic label" href="https://www.cyzone.cn/" target="_blank"><i class="iconfont iconchuanyebang"></i>创业邦</a>
+                            <a class="ui basic label" href="http://www.svinsight.com/" target="_blank"><i class="iconfont iconguigu"></i>硅谷洞察</a>
+                            
+                            <a class="ui basic label" href="http://www.dgtle.com/" target="_blank"><i class="iconfont iconshuzi"></i>数字尾巴</a>
+                            <a class="ui basic label" href="https://www.qdaily.com/" target="_blank"><i class="iconfont iconribao"></i>好奇心日报</a>
+                            <a class="ui basic label" href="https://www.guokr.com/" target="_blank"><i class="iconfont iconguoke"></i>果壳</a>
+                            <a class="ui basic label" href="https://www.qianzhan.com/" target="_blank"><i class="utensils orange icon"></i>前瞻网</a>
+                            
+                            <a class="ui basic label" href="https://www.pingwest.com/" target="_blank"><i class="iconfont iconpinwan"></i>品玩</a>
+                            <a class="ui basic label" href="https://www.theverge.com/" target="_blank"><i class="iconfont icontheverge"></i>TheVerge</a>
+                            <a class="ui basic label" href="https://www.universal-sci.com/" target="_blank"><i class="iconfont iconuniversal"></i>universal-sci</a>
+                            
+                            <a class="ui violet label" href="https://www.ifanr.com/" target="_blank"><i class="iconfont iconaifan"></i>爱范儿</a>
+                            
+                            
+                           
+                            <a class="ui basic label" href="https://techcrunch.com/" target="_blank"><i class="iconfont icontechcrunch"></i>TechCrunch</a>
+                            <a class="ui orange label" href="https://www.leiphone.com/" target="_blank"><i class="iconfont iconleifeng"></i>雷锋网</a>
+                            <a class="ui basic label" href="https://feeder.co/" target="_blank"><i class="iconfont iconfeeder"></i>Feeder</a>
+                        <!--    <a class="ui basic label" href="https://sputniknews.com/" target="_blank">俄星社</a>
+                            <a class="ui black label" href="https://houxu.app/" target="_blank">后续</a>    -->
+                            <a class="ui basic label" href="http://ef.zhiweidata.com/#!/index" target="_blank"><i class="iconfont iconxinwen2"></i>知微|事见</a>
+                            <a class="ui basic label" href="https://trends.google.com/trends/explore" target="_blank"><i class="iconfont icongugequshi"></i>谷歌趋势</a>
+                            <a class="ui black label" href="http://wp.zengjiang.net/0:/" target="_blank"><i class="iconfont iconzdriver"></i>  -Drive</a> 
+                            <a class="ui red label" href="https://www.lanzoux.com/b0f1944aj" target="_blank"><i class="iconfont icontv"></i>电视盒子APP</a>
+                            
+                            
+                            
+                            
+                        <!--    <a class="ui basic label" href="https://readhub.cn/topics" target="_blank">ReadHub</a>-->
+                        </div> 
+                    </div>
+                    
+                        <div class="links column">
+                            
+                        <div class="ui top attached label">娱乐</div>
+                        <div class="ui labels" style="margin-top:0px;padding-top:10px;">
+                            <a class="ui basic label" href="https://www.bilibili.com/" target="_blank"><i class="iconfont iconbilibili"></i>哔哩哔哩</a>
+                            <a class="ui basic label" href="http://www.youtube.com/" target="_blank"><i class="youtube red icon"></i>Youtube</a>
+                            <a class="ui basic label" href="http://www.iqiyi.com/" target="_blank"><i class="iconfont iconaiqiyi"></i>爱奇艺</a>
+                            <a class="ui basic label" href="https://www.mgtv.com" target="_blank">芒果TV</a>
+                            <a class="ui basic label" href="https://v.qq.com/" target="_blank"><i class="iconfont icontengxunshipin"></i>腾讯视频</a>
+                           
+                            <a class="ui basic label" href="https://subhd.tv" target="_blank"><i class="iconfont icondianying11"></i>SubHD</a>
+                            <a class="ui black label" href="http://ddrk.me/" target="_blank"><i class="iconfont icondianying10"></i>低端影视</a>
+                            <a class="ui basic label" href="http://www.tufutv8.com" target="_blank"><i class="iconfont icondianying9"></i>屠夫网</a>
+                            
+                            <a class="ui basic label" href="https://neets.cc/" target="_blank"><i class="iconfont icondianying8"></i></i>Neets</a>
+                            <a class="ui blue label" href="http://www.zmz2019.com/" target="_blank"><i class="iconfont icondianying7"></i>字幕组</a>
+                            <a class="ui grey label" href="http://lcoc.top/2.4/" target="_blank"><i class="iconfont icondianying2"></i>蓝调网</a>
+                            
+                            <a class="ui basic label" href="https://www.novipnoad.com/" target="_blank"><i class="iconfont icondianying5"></i>NO影视</a>
+                         <!--   <a class="ui red label" href="https://dy.jiang.pub/" target="_blank"><i class="iconfont icondianying4"></i>影视搜索</a>  -->
+                            <a class="ui basic label" href="https://www.yunbtv.com/" target="_blank"><i class="iconfont icontv"></i>云播TV</a>
+                            <a class="ui basic label" href="https://www.dytt8.net/" target="_blank"><i class="iconfont icondianying6"></i>电影天堂</a>
+                            
+                        <!--    <a class="ui red label" href="https://music.jiang.pub" target="_blank"><i class="iconfont iconyinyue"></i>音乐解析</a>  -->
+                         <!--   <a class="ui basic label" href="http://guozhivip.com/yinyue/" target="_blank"><i class="iconfont iconyinle1"></i>果汁音乐</a> -->
+                            <a class="ui basic label" href="https://last.fm" target="_blank"><i class="iconfont iconlastfm"></i>LastFM</a>
+                            <a class="ui basic label" href="https://www.beatport.com/" target="_blank"><i class="iconfont iconziyuanldpi"></i>BeatPort</a>
+                            <a class="ui basic label" href="http://www.xiami.com/" target="_blank"><i class="iconfont iconxiami1"></i>虾米</a>
+                            <a class="ui basic label" href="https://music.163.com/" target="_blank"><i class="iconfont iconwangyiyinyue"></i>网易云音乐</a>
+                            <a class="ui basic label" href="https://www.spotify.com/" target="_blank"><i class="spotify green icon"></i>Spotify</a>
+                            <a class="ui basic label" href="https://soundcloud.com/" target="_blank"><i class="soundcloud orange icon"></i>SoundCloud</a>
+                            
+                            <a class="ui yellow label" href="http://www.zimuxia.cn/" target="_blank">字幕侠</a>
+                            <a class="ui basic label" href="https://www.novipnoad.com/" target="_blank">NoVIP</a>
+                            <a class="ui black label" href="https://vip.ccava.net" target="_blank">全能解析</a>
+                            <a class="ui basic label" href="http://www.shipinyu.com/" target="_blank"><i class="iconfont iconshipinyu"></i>视频鱼</a>
+                            <a class="ui basic label" href="https://www.onehourlife.net" target="_blank"><i class="iconfont iconjilupian"></i>纪录片</a>
+                            
+                            <a class="ui basic label" href="https://www.imdb.com/" target="_blank"><i class="imdb yellow icon"></i>IMDB</a>
+                            
+                            <a class="ui basic label" href="https://www.jubt.net/cn/index.html" target="_blank">聚BT</a>
+                              
+                        
+                        </div>
+                    </div></div>
+        </div>
+    </div><div class="ui vertical stripe links segment">
+        <div class="ui equal width stackable internally celled grid">
+            <div class="center aligned row"><div class="links column">
+                
+                
+                        <div class="ui top attached label">学习</div>
+                        <div class="ui labels" style="margin-top:0px;padding-top:10px;">
+                            <a class="ui basic label" href="https://www.notion.so/" target="_blank"><i class="sticky note outline icon"></i>Notion</a>
+                            <a class="ui basic label" href="https://www.yinxiang.com/" target="_blank"><i class="evernote green icon"></i>印象笔记</a>
+                            <a class="ui basic label" href="https://www.yuque.com/" target="_blank"><i class="iconfont iconyuque"></i>语雀</a>
+                            <a class="ui basic label" href="http://note.youdao.com/" target="_blank"><i class="iconfont iconyoudaoyunbiji"></i>有道云笔记</a>
+                            <a class="ui basic label" href="https://www.gitbook.com/" target="_blank"><i class="book blue icon"></i>GitBook</a>
+                            <a class="ui basic label" href="https://www.mygraphpaper.com/index.php?lang=zh-hans" target="_blank"><i class="iconfont iconmygraphpaper"></i>MyGraphPaper</a>
+                            <a class="ui pink label" href="https://www.jianshu.com/" target="_blank"><i class="iconfont iconjianshu"></i>简书</a>
+                         <!--   <a class="ui blue label" href="https://pan.baidu.com/" target="_blank">网盘</a>  -->
+                            <a class="ui basic label" href="https://www.wordandphrase.info" target="_blank">Words</a>
+                            <a class="ui red label" href="https://shimo.im/" target="_blank">石墨</a>
+                            <a class="ui basic label" href="https://medium.com/" target="_blank"><i class="medium m icon"></i>Medium</a>
+                            <a class="ui blue label" href="https://www.tianfateng.cn/" target="_blank"><i class="iconfont icontianyuanxiaozhan"></i>田园小站</a>
+                            <a class="ui basic label" href="https://www.coursera.org/" target="_blank">Coursera</a>
+                            <a class="ui basic label" href="http://mooc.org/" target="_blank"><i class="iconfont iconmooc"></i>MOOC</a>
+                            <a class="ui basic label" href="http://www.imooc.com/course/list" target="_blank">慕课网</a>
+                            <a class="ui olive green label" href="http://open.163.com/" target="_blank"><i class="iconfont iconwangyigongkaike"></i>网易公开课</a>
+                            <a class="ui basic label" href="https://ke.qq.com/" target="_blank"><i class="iconfont icontengxunketang"></i>腾讯课堂</a>
+                           
+                            <a class="ui black label" href="http://www.doyoudo.com/" target="_blank"><i class="iconfont icondoyoudo"></i>doyoudo</a>
+                            <a class="ui basic label" href="http://oeasy.org/" target="_blank"><i class="iconfont iconoeasy"></i>oeasy</a>
+                            <a class="ui basic label" href="http://www.hejizhan.com/bbs/" target="_blank">万千合集</a>
+                            <a class="ui basic label" href="https://site.sciping.com/" target="_blank">科塔学术</a>
+                            <a class="ui basic label" href="https://www.linkresearcher.com/" target="_blank">领研网</a>
+                            <a class="ui basic label" href="https://www.cnki.net/" target="_blank">CNKI</a>
+                            <a class="ui basic label" href="https://mm.edrawsoft.cn/files" target="_blank"><i class="iconfont iconsiweidaotu"></i>思维导图</a>
+                            <a class="ui red label" href="https://app.diagrams.net/" target="_blank">在线脑图</a>
+                            <a class="ui basic label" href="https://naotu.baidu.com/" target="_blank"><i class="iconfont iconbaidunaotu"></i>百度脑图</a>
+                            
+                            <a class="ui wine red  label" href="https://gitmind.cn/" target="_blank"><i class="iconfont icongitmind"></i>GitMind</a>
+                            
+                            <a class="ui basic label" href="https://aippt.wps.cn/welcome" target="_blank"><i class="iconfont iconzhinengppt"></i>智能PPT</a>
+                            <a class="ui basic label" href="https://www.teambition.com/" target="_blank">Teambition</a>
+                            <a class="ui basic label" href="http://www.zhishifenzi.com/" target="_blank">知识分子</a>
+                            <a class="ui basic label" href="https://www.1sj.tv" target="_blank"><i class="iconfont iconyishijie"></i>译视界</a>
+                            <a class="ui basic label" href="https://www.paperweekly.site" target="_blank">PaperWeekly</a>
+                            
+                            
+                            
+                            
+                            
+                        </div>
+                    </div><div class="links column">
+                         <div class="ui top attached label">社交</div>
+                        <div class="ui labels" style="margin-top:0px;padding-top:10px;">
+                            <a class="ui basic label" href="https://weibo.com/" target="_blank"><i class="weibo red icon"></i>微博</a>
+                            <a class="ui basic label" href="https://wx.qq.com/" target="_blank"><i class="weixin green icon"></i>微信</a>
+                            <a class="ui basic label" href="https://www.zhihu.com/" target="_blank"><i class="zhihu blue icon"></i>知乎</a>
+                            
+                            <a class="ui green label" href="https://www.douban.com/" target="_blank">豆瓣</a>  
+                            
+                            <a class="ui basic label" href="https://www.quora.com/" target="_blank"><i class="quora red icon"></i>Quora</a>
+                            <a class="ui basic label" href="https://www.facebook.com/" target="_blank"><i class="facebook f blue icon"></i>Facebook</a>
+                            <a class="ui basic label" href="https://twitter.com/" target="_blank"><i class="iconfont icontwitter44"></i>Twitter</a>
+                            <a class="ui basic label" href="https://reddit.com/" target="_blank"><i class="reddit orange icon"></i>Reddit</a>
+                            <a class="ui basic label" href="https://www.gcores.com/" target="_blank">机核</a>
+                            <a class="ui basic label" href="https://plus.google.com/" target="_blank">Google+</a>
+                            <a class="ui basic label" href="https://www.tumblr.com/" target="_blank"><i class="tumblr blue icon"></i>Tumblr</a>
+                            
+                            <a class="ui basic label" href="https://www.instagram.com/" target="_blank"><i class="iconfont iconinstagram"></i>Instagram</a>
+                            <a class="ui basic label" href="https://discord.com/" target="_blank"><i class="iconfont icondiscord"></i>Discord</a>
+                            <a class="ui basic label" href="http://www.feekr.com/" target="_blank">Feekr</a>
+                            <a class="ui basic label" href="http://www.mafengwo.cn/" target="_blank"><i class="iconfont iconmafengwo"></i>马蜂窝</a>
+                            <a class="ui basic label" href="https://www.linkedin.com/" target="_blank"><i class="linkedin blue icon"></i>LinkedIn</a>
+                            <a class="ui grey label" href="https://hacpai.com/" target="_blank"><i class="iconfont iconheikepai"></i>黑客派</a>
+                            <a class="ui basic label" href="https://xz.aliyun.com/" target="_blank">先知</a>
+                            <a class="ui basic label" href="https://www.v2ex.com/" target="_blank"><i class="iconfont iconv2ex"></i>V2EX</a>
+                           
+                            <a class="ui basic label" href="https://mail.google.com" target="_blank"><i class="iconfont icongmail"></i>Gmail</a>
+                            <a class="ui basic label" href="https://www.hotmail.com" target="_blank"><i class="iconfont iconhotmail"></i>Hotmail</a>
+                            <a class="ui red label" href="https://mail.yandex.com" target="_blank"><i class="iconfont iconyandex"></i>Yandex</a>
+                            <a class="ui basic label" href="https://mail.aliyun.com/" target="_blank"><i class="iconfont iconalimailaliyouxiang"></i>阿里邮箱</a>
+                            <a class="ui basic label" href="https://mail.zoho.com/" target="_blank"><i class="iconfont iconzohomail"></i>ZOHO邮箱</a>
+                            <a class="ui basic label" href="http://mail.tom.com/" target="_blank"><i class="iconfont icontomyouxiang"></i>TOM邮箱</a>
+                            <a class="ui basic label" href="http://email.163.com/" target="_blank"><i class="envelope red icon"></i>网易邮箱</a>
+                            <a class="ui basic label" href="https://www.materialtools.com/" target="_blank"><i class="iconfont iconlinshiyouxiang"></i>临时短信</a>
+                            <a class="ui basic label" href="http://www.newsmth.net/nForum/#!mainpage" target="_blank"><i class="iconfont iconshuimushequ"></i>水木社区</a>
+                            <a class="ui basic label" href="https://www.shadow-forum.com/forum.php" target="_blank"><i class="iconfont iconyingziluntan"></i>影子论坛</a>
+                            <a class="ui basic label" href="https://wenyi.me/" target="_blank">文艺</a>
+                            <a class="ui yellow label" href="http://jandan.net/" target="_blank">煎蛋</a>
+                            
+                        
+                        
+                        
+                       
+                            
+                        </div>
+                    </div></div>
+        </div>
+    </div><div class="ui vertical stripe links segment">
+        <div class="ui equal width stackable internally celled grid">
+            <div class="center aligned row"><div class="links column">
+                        <div class="ui top attached label">产品/设计</div>
+                        <div class="ui labels" style="margin-top:0px;padding-top:10px;">
+                            <a class="ui blue label" href="http://www.woshipm.com/" target="_blank">PM</a>
+                            <a class="ui basic label" href="http://www.managershare.com/" target="_blank">经理人分享</a>
+                            <a class="ui basic label" href="http://www.chanpin100.com/" target="_blank">产品壹佰</a>
+                            <a class="ui basic label" href="https://faxian.appinn.com/" target="_blank">发现小众</a>
+                            <a class="ui basic label" href="https://xinquji.com/" target="_blank">新趣集</a>
+                            <a class="ui basic label" href="http://zuimeia.com/" target="_blank">最美应用</a>
+                            <a class="ui basic label" href="https://dh.woshipm.com" target="_blank">阿猫</a>
+                            <a class="ui basic label" href="https://appadvice.com/" target="_blank"><i class="iconfont iconapptuijian"></i>App推荐</a>
+                            <a class="ui basic label" href="https://bigezhang.com/" target="_blank">比格张</a>
+                            <a class="ui basic label" href="http://www.pmyuan.com/" target="_blank">产品学院</a>
+                            <a class="ui basic label" href="http://www.inneed.club/" target="_blank">inNeed</a>
+                            <a class="ui basic label" href="https://www.niaogebiji.com/" target="_blank">鸟哥笔记</a>
+                            <a class="ui basic label" href="https://coffee.pmcaff.com/" target="_blank">PMCaff</a>
+                            <a class="ui teal label" href="https://zhaodao.ai/" target="_blank">找到AI</a>
+                            <a class="ui green label" href="https://topbook.cc/" target="_blank">高效生活研究所</a>
+                            <a class="ui basic label" href="https://www.producthunt.com/" target="_blank">ProductHunt</a>
+                            <a class="ui red label" href="https://sspai.com/" target="_blank">少数派</a>
+                            <a class="ui basic label" href="https://next.36kr.com/posts" target="_blank">NEXT</a>
+                            <a class="ui basic label" href="https://www.qimai.cn/rank" target="_blank"><i class="app store icon"></i>七麦</a>
+                            <a class="ui basic label" href="https://www.geekpark.net/" target="_blank">极客公园</a>
+                            <a class="ui basic label" href="https://drockart.com" target="_blank">DRock</a>
+                            <a class="ui basic label" href="https://wooooooow.cn/" target="_blank">哇噢</a>
+                            <a class="ui basic label" href="http://lackk.com/nav/" target="_blank">LACKK</a>
+                            <a class="ui basic label" href="http://www.bigbigwork.com/nav/4.html" target="_blank">大作</a>
+                            <a class="ui basic label" href="https://www.zoscape.com/" target="_blank">ZOSCAPE</a>
+                            <a class="ui basic label" href="https://www.awwwards.com/" target="_blank">awwwards</a>
+                            <a class="ui basic label" href="https://dribbble.com/" target="_blank"><i class="dribbble icon"></i>dribbble</a>
+                            <a class="ui basic label" href="https://www.behance.net/" target="_blank"><i class="behance blue icon"></i>Behance</a>
+                            <a class="ui basic label" href="http://www.rushi.net" target="_blank">如室</a>
+                            <a class="ui basic label" href="https://archi.ru/" target="_blank">Archi</a>
+                            <a class="ui basic label" href="http://www.zshid.com/?c=navigations&a=index" target="_blank">优筑</a>
+                            <a class="ui basic label" href="http://www.linecg.com/" target="_blank">直线网</a>
+                            <a class="ui basic label" href="http://sudasuta.com/" target="_blank">苏塔</a>
+                            <a class="ui basic label" href="https://isux.tencent.com/" target="_blank">腾讯ISUX</a>
+                            <a class="ui basic label" href="http://www.geekpark.net/" target="_blank">极客公园</a>
+                            <a class="ui basic label" href="https://www.yystv.cn/" target="_blank">游研社</a>
+                            <a class="ui basic label" href="https://www.91sotu.com/" target="_blank">搜图导航</a>
+                            <a class="ui basic label" href="https://www.iplaysoft.com/" target="_blank">异次元</a>
+                            
+                            
+                            
+                            <a class="ui basic label" href="http://www.ofcourse.io/#/home" target="_blank">OF COURSE</a>
+                            <a class="ui basic label" href="http://www.leewiart.com/WebPage/default.aspx" target="_blank">LeewiArt</a>
+                            <a class="ui basic label" href="https://www.pixiv.net/" target="_blank">Pixiv</a>
+                            <a class="ui basic label" href="https://unsplash.com/" target="_blank">Unsplash</a>
+                           
+                            <a class="ui basic label" href="https://www.iconfont.cn/" target="_blank">阿里图标</a>
+                            
+                            
+                        </div>
+                    </div><div class="links column">
+                        <div class="ui top attached label">文艺/创作</div>
+                        <div class="ui labels" style="margin-top:0px;padding-top:10px;">
+                            
+                            <a class="ui red label" href="https://www.ugediao.com/" target="_blank">有格调</a>
+                            <a class="ui black label" href="http://neocha.com" target="_blank">Neocha</a>
+                            <a class="ui basic label" href="http://www.lindenfrederick.com/" target="_blank">Frederick</a>
+                            <a class="ui basic label" href="https://www.allhistory.com/" target="_blank"><i class="iconfont iconquanlishi"></i>全历史</a>
+                            <a class="ui basic label" href="http://www.ltfc.net/" target="_blank">中华珍宝馆</a>
+                            
+                            <a class="ui basic label" href="https://www.ageeye.cn/" target="_blank"><i class="iconfont iconfaxian"></i>发现中国</a>
+                           
+                           
+                            
+                           
+                          
+                            
+                           
+                            <a class="ui basic label" href="http://www.mtime.com/" target="_blank">时光网</a>
+                            <a class="ui basic label" href="https://www.rottentomatoes.com/" target="_blank">烂番茄</a>
+                            
+                            
+                            <a class="ui basic label" href="https://www.jiumodiary.com/" target="_blank">鸠摩搜书</a>
+                            <a class="ui yellow label" href="https://www.shuge.org/" target="_blank">书格</a>
+                            <a class="ui basic label" href="https://www.dushu.com" target="_blank"><i class="iconfont icondushu"></i>读书</a>
+                           
+                            <a class="ui red label" href="http://www.mvcat.com/" target="_blank"><i class="iconfont icondianying8"></i></i>MVCat</a>
+                            <a class="ui basic label" href="http://www.cnu.cc/" target="_blank">CNU视觉</a>
+                            <a class="ui pink label" href="http://www.hualvtu.com/" target="_blank">画旅途</a>
+                            
+                            <a class="ui black label" href="https://legacygallery.com" target="_blank">Legacy</a>
+                           
+                            <a class="ui basic label" href="http://www.ilixiangguo.com/" target="_blank">理想国</a>
+                            <a class="ui basic label" href="https://www.psychspace.com/" target="_blank">心理学空间</a>
+                            <a class="ui basic label" href="http://www.xinli001.com/" target="_blank">壹心理</a>
+                            <a class="ui basic label" href="http://www.aisixiang.com/" target="_blank">爱思想</a>
+                            <a class="ui basic label" href="https://sobooks.cc/" target="_blank">SoBook</a>
+                            
+                            <a class="ui basic label" href="https://www.metal-archives.com/" target="_blank">MetalTomArchives</a>
+                            <a class="ui blue label" href="https://weraveyou.com/" target="_blank">WeRaveYou</a>
+                            <a class="ui basic label" href="https://www.tomorrowland.com/global/" target="_blank">TomorrowLand</a>
+                            <a class="ui basic label" href="http://www.trancepodium.com/" target="_blank">TrancePodium</a>
+                            <a class="ui basic label" href="https://n5md.com/" target="_blank"><i class="iconfont iconyinyue"></i>n5md厂牌</a>
+                        </div>
+                    </div></div>
+        </div>
+    </div><div class="ui vertical stripe links segment">
+        <div class="ui equal width stackable internally celled grid">
+            <div class="center aligned row"><div class="links column">
+                
+                <div class="ui top attached label">开发</div>
+                        <div class="ui labels" style="margin-top:0px;padding-top:10px;">
+                            <a class="ui basic label" href="http://www.w3school.com.cn/" target="_blank">W3School</a>
+                            <a class="ui basic label" href="https://stackoverflow.com/" target="_blank"><i class="stack overflow orange icon"></i>Stack Overflow</a>
+                            <a class="ui basic label" href="https://toutiao.io/" target="_blank">头条</a>
+                            <a class="ui basic label" href="http://segmentfault.com/" target="_blank">SegmentFault</a>
+                            <a class="ui basic label" href="https://juejin.im/" target="_blank"><i class="angle double down blue icon"></i>掘金</a>
+                            <a class="ui basic label" href="https://leetcode-cn.com/" target="_blank"><i class="terminal icon"></i>LeetCode</a>
+                            <a class="ui basic label" href="http://www.codeforge.cn" target="_blank"><i class="file code outline icon"></i>CodeForge</a>
+                            <a class="ui red label" href="https://edu.csdn.net/" target="_blank">CSDN</a>
+                            <a class="ui black label" href="https://github.com/" target="_blank"><i class="github white icon"></i>GitHub</a>
+                            <a class="ui basic label" href="https://learnku.com/" target="_blank">Learnku</a>
+                            <a class="ui green label" href="https://www.runoob.com/" target="_blank">菜鸟教程</a>
+                            <a class="ui basic label" href="https://devdocs.io" target="_blank">Docs</a>
+                            <a class="ui basic label" href="http://codeup.cn/" target="_blank"><i class="code branch icon"></i>Codeup</a>
+                            <a class="ui basic label" href="https://studio.dev.tencent.com/dashboard/workspace" target="_blank"><i class="code blue icon"></i>Coding Studio</a>
+                           <!-- <a class="ui grey label" href="https://edu.aliyun.com/developer" target="_blank">阿里云</a> -->
+                            <a class="ui basic label" href="https://cloud.tencent.com/" target="_blank"><i class="iconfont icontengxunyun"></i>腾讯云</a>
+                            <a class="ui basic label" href="https://console.cloud.google.com/" target="_blank">谷歌云</a>
+                            <a class="ui basic label" href="https://console.aws.amazon.com/console/home" target="_blank"><i class="iconfont iconawsyun"></i>亚马逊云</a>
+                            <a class="ui red label" href="https://dash.cloudflare.com/login" target="_blank"><i class="iconfont iconcloudflare"></i>Cloudflare</a>
+                            <a class="ui basic label" href="https://my.zerotier.com/" target="_blank">zerotier</a>
+                            <a class="ui blue label" href="https://my.freenom.com/" target="_blank">Freedom</a>
+                            <a class="ui yellow label" href="https://www.dynadot.com/" target="_blank">Dynadot</a>
+                            
+                            
+                            
+                           
+                            
+                            <a class="ui basic label" href="https://www.nowcoder.com/" target="_blank">牛客</a>
+                            <a class="ui basic label" href="https://www.githubs.cn/" target="_blank">Github社区</a>
+                            <a class="ui basic label" href="https://hellogithub.com" target="_blank">HelloGithub</a>
+                         
+                            <a class="ui basic label" href="https://segmentfault.com/" target="_blank"><i class="iconfont iconsifou"></i>SF思否</a>
+                            <a class="ui basic label" href="https://www.kaggle.com/" target="_blank">Kaggle</a>
+                            <a class="ui basic label" href="https://cn.vuejs.org/v2/guide/" target="_blank"><i class="vuejs green icon"></i>Vue.js</a>
+                            <a class="ui basic label" href="https://www.oschina.net/" target="_blank">开源中国</a>
+                            <a class="ui basic label" href="https://gitee.com" target="_blank">码云</a>
+                            <a class="ui basic label" href="https://visualgo.net/zh" target="_blank">算法可视化</a>
+                            <a class="ui basic label" href="https://nav.web-hub.cn/" target="_blank">前端导航</a>
+                            <a class="ui basic label" href="https://bigquant.com" target="_blank">AI量化</a>
+                            <a class="ui basic label" href="https://techbrood.com/" target="_blank">踏得网</a>
+                            <a class="ui basic label" href="http://jsrun.net/" target="_blank">JSRun</a>
+                            <a class="ui basic label" href="https://www.toolfk.com" target="_blank">开发工具箱</a>
+                            
+                            <a class="ui black label" href="https://www.virustotal.com/gui/" target="_blank"><i class="iconfont iconzaixianshadu"></i>在线查毒</a>
+                            <a class="ui green label" href="http://www.yxssp.com/" target="_blank"><i class="iconfont iconyixingkongjian"></i>异星空间</a>
+                            <a class="ui basic label" href="https://www.ghpym.com/" target="_blank"><i class="iconfont icongouheboke"></i>果核剥壳</a>
+                            <a class="ui basic label" href="https://hrtsea.com/" target="_blank">心海E站</a>
+                            <a class="ui basic label" href="https://www.mpyit.com/" target="_blank">老殁</a>
+                            <a class="ui orange label" href="https://up.woozooo.com/" target="_blank"><i class="iconfont iconlanzouyun"></i>蓝奏云</a>
+                            <a class="ui orange label" href="https://cloud.189.cn/" target="_blank"><i class="iconfont icontianyiyunpan"></i>天翼云盘</a>
+                            <a class="ui basic label" href="https://cowtransfer.com/" target="_blank"><i class="iconfont iconnainiu"></i>奶牛快传</a>
+                            
+                            
+                            <a class="ui basic label" href="https://www.wenshushu.cn/" target="_blank"><i class="iconfont iconwenshushu"></i>文叔叔</a>
+                            <a class="ui basic label" href="https://app.tmp.link/" target="_blank"><i class="iconfont icontmplink"></i>TMPlink</a>
+                         <!--   <a class="ui blue label" href="http://ariang.mayswind.net/latest/#!/downloading" target="_blank"><i class="iconfont iconariang"></i>AriaNg</a>   -->
+                            
+                            <a class="ui basic label" href="https://msdn.itellyou.cn/" target="_blank"><i class="iconfont iconmsdnxiazai"></i>MSDN下载</a>
+                        
+                        
+                        
+                        
+                        </div>
+                    </div><div class="links column">
+                        <div class="ui top attached label">趣站</div>
+                        <div class="ui labels" style="margin-top:0px;padding-top:10px;">
+                            <a class="ui basic label" href="https://www.nasa.gov/" target="_blank"><i class="rocket blue icon"></i>NASA</a>
+                            <a class="ui basic label" href="http://spaceweather.com" target="_blank">paceweather</a>
+                            <a class="ui basic label" href="https://experiments.withgoogle.com/collection/chrome" target="_blank">GoogleLab</a>
+                            <a class="ui basic label" href="https://www.fandom.com" target="_blank">Fandom</a>
+                            <a class="ui basic label" href="https://goop.com/" target="_blank">goop</a>
+                            <a class="ui basic label" href="https://www.vanityfair.com/" target="_blank">Vanityfair</a>
+                            <a class="ui basic label" href="https://wallhaven.cc" target="_blank">WallHaven</a>
+                            <a class="ui basic label" href="https://www.youyong.top/" target="_blank">有用</a>
+                            <a class="ui black label" href="https://www.moma.org/" target="_blank">Moma</a>
+                            <a class="ui basic label" href="https://creativemass.cn/#/" target="_blank">Creativemass</a>
+                            <a class="ui basic label" href="https://www.itsnicethat.com/" target="_blank">ItsNiceThat</a>
+                            <a class="ui basic label" href="https://www.egouz.com/" target="_blank">egouz</a>
+                            <a class="ui basic label" href="http://guozhivip.com/lab/" target="_blank">果汁实验室</a>
+                            <a class="ui basic label" href="https://newlife.ai/" target="_blank">NewLife</a>
+                            <a class="ui basic label" href="https://cargo.site/" target="_blank">Crago</a>
+                            <a class="ui basic label" href="http://www.foodwake.com/" target="_blank">唤醒食物</a>
+                            <a class="ui basic label" href="https://www.mvyxws.com/" target="_blank">医学微视</a>
+                            <a class="ui basic label" href="https://www.chongbuluo.com/" target="_blank">虫部落</a>
+                            <a class="ui basic label" href="http://collativelearning.com/" target="_blank">Collative</a>
+                            <a class="ui basic label" href="https://mianbaoduo.com" target="_blank">面包多</a>
+                            <a class="ui basic label" href="https://www.freebuf.com/" target="_blank">freeBuf</a>
+                            <a class="ui red label" href="https://www.52pojie.cn/" target="_blank"><i class="iconfont iconwuaipojie"></i>吾爱破解</a>
+                            <a class="ui basic label" href="http://zhangwenli.com/lipstick/" target="_blank">口红色号可视化</a>
+                            <a class="ui basic label" href="https://www.spacex.com/" target="_blank">SpaceX</a>
+                            <a class="ui basic label" href="https://lucyhardcastle-thefifthsense.i-d.co/en_gb/room/fifth" target="_blank">i-D</a>
+                            <a class="ui basic label" href="https://artsandculture.google.com/project/national-park-service" target="_blank">Artsand</a>
+                            <a class="ui basic label" href="https://www.pc426.com/" target="_blank">PC426</a>
+                            <a class="ui blue label" href="https://tools.miku.ac/" target="_blank">MikuTools</a>
+                            <a class="ui basic label" href="https://photomosh.com/" target="_blank">故障艺术</a>
+                            <a class="ui basic label" href="https://acg.ci/" target="_blank">芯次元</a>
+                            <a class="ui basic label" href="http://www.menghuanacg.cn" target="_blank">萌乡</a>
+                            <a class="ui basic label" href="http://www.astron.ac.cn/index.htm" target="_blank">Astron</a>
+                            <a class="ui basic label" href="https://www.jisilu.cn/" target="_blank">集思录</a>
+                            <a class="ui basic label" href="https://fotomen.cn" target="_blank">Fotomen</a>
+                            <a class="ui basic label" href="https://earthdata.nasa.gov" target="_blank">EarthData</a>
+                            <a class="ui basic label" href="https://720yun.com/channel" target="_blank"><i class="iconfont iconquanjing"></i>全景平台</a>
+                            <a class="ui basic label" href="https://www.skypixel.com/" target="_blank"><i class="iconfont iconhangpai"></i>航拍社区</a>
+                            <a class="ui basic label" href="https://www.ipanda.com" target="_blank">iPanda</a>
+                            <a class="ui basic label" href="https://www.dute.org" target="_blank">独特</a>
+                            <a class="ui basic label" href="https://www.toodaylab.com/" target="_blank">tooday</a>
+                            <a class="ui basic label" href="https://make.quwj.com/" target="_blank">趣无尽</a>
+                            <a class="ui basic label" href="https://harpers.org/" target="_blank">Harpers</a>
+                            <a class="ui basic label" href="https://demodern.de/" target="_blank">Demodern</a><a class="ui basic label" href="https://iacg.rip/" target="_blank">iACG</a>
+                            <a class="ui grey label" href="https://www.yikm.net/" target="_blank">小霸王模拟器</a>
+                           <a class="ui basic label" href="https://indienova.com/" target="_blank">Indienova</a>
+                            <a class="ui yellow label" href="https://www.52doutu.cn/" target="_blank">我爱斗图</a>
+                            
+                            
+                        </div>
+                    </div></div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="//unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="//unpkg.com/fomantic-ui/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="/assets/js/common.js"></script>
+    <script type="text/javascript" src="//unpkg.com/dayjs/dayjs.min.js"></script>
+    <script type="text/javascript" src="//unpkg.com/dayjs/locale/zh-cn.js"></script>
+    <script type="text/javascript" src="//unpkg.com/dayjs/plugin/relativeTime.js"></script>
+    <script type="text/javascript" src="//unpkg.com/js-cookie/src/js.cookie.js"></script>
+    <script type="text/javascript" src="/assets/js/suggest-query.min.js"></script>
+    <script type="text/javascript" src="/assets/js/hitokoto.js"></script>
+    <script type="text/javascript" src="/assets/js/home.js"></script>
+    
+   <!-- 在线工具
+    <a class="ui green label" href="https://www.materialtools.com/" target="_blank">临时短信</a>
+    <a class="ui green label" href="https://tools.miku.ac/" target="_blank">Miku工具</a>
+    <a class="ui green label" href="https://aippt.wps.cn/welcome" target="_blank">智能PPT</a>
+    <a class="ui green label" href="https://www.52doutu.cn/" target="_blank">我爱斗图</a>
+    <a class="ui basic label" href="http://www.shipinyu.com/" target="_blank">视频鱼</a>
+    <a class="ui basic label" href="http://www.foodwake.com/" target="_blank">唤醒食物</a>
+    <a class="ui basic label" href="http://www.foodwake.com/" target="_blank">唤醒食物</a>
+    <a class="ui basic label" href="http://www.foodwake.com/" target="_blank">唤醒食物</a>
+    <a class="ui basic label" href="http://www.foodwake.com/" target="_blank">唤醒食物</a>
+    <a class="ui basic label" href="http://www.foodwake.com/" target="_blank">唤醒食物</a>
+    
+    
+    
+                                                         -->
+    
+</body>
+</html>
